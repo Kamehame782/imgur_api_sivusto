@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Hello, cats!</title>
+</head>
+<body>
+
+    <!-- Title/jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white no-margin">
+        <div class="container text-center">
+            <!-- Navigation bar -->
+            <nav class="nav navbar navbar-expand-sm nav-pills bg-info navbar-dark">
+                <div class="container">
+                    <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <div class="nav navbar navbar-nav">
+                            <a class="nav-item nav-link active mr-auto" data-toggle="tab" href="#">home</a>
+                            <a class="nav-item nav-link mr-auto" data-toggle="tab" href="#">about</a>
+                            <a class="nav-item nav-link mr-auto" data-toggle="tab" href="#">links</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- nav end -->
+        <h1 class="display-3">Cats are household pets</h1>
+        <span id="testi"></span>
+        <p class="lead">There is no comparing to cats when it comes to household pets.</p>
+        </div>
+    </div>
+    <!-- title end -->
+
+    <!-- search -->
+    <div class="text-center margin-8" id="container_search">
+        <form id="form_search">
+            <div class="form-group no-margin">
+                <input type="text" id="hakusana" class="form-control" placeholder="Hakusana">
+                <small class="form-text text-muted">esim. "Kissa"</small>
+            </div>
+            <button type="button" id="hae_kuvia" class="btn btn-primary my-2" onclick="loadDoc()">Hae kuvia</button>
+            <button type="button" id="lisaa_kuvia" class="btn btn-primary my-2"onclick="loadDoc_more()">Lisää kuvia</button> 
+        </form>
+    </div>
+    <!-- search end -->
+
+    <!-- image gallery -->
+    <div class="container mx-auto no-padding no-margin" id="container_images">
+        <!-- image cards -->
+        <div class="row margin-8">
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3  col-xl-2 col-sm-4 padding-3">
+                <div class="card">
+                    <img src="" onclick="openImage(this)" class="card-img-top" alt="Image will be displayed here">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image gallery end -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small text-white bg-secondary">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://cdn.bestfriends.org/s3fs-public/resource/three-orange-cats.jpg"> Cats are the best</a>
+        </div>
+    </footer>
+    <!-- Footer end-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- My js -->
+    <script src="./js/javascript.js"></script>
+</body>
+</html>

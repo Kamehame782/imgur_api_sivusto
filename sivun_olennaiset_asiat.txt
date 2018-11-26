@@ -1,0 +1,5 @@
+1. Bootstrapin käyttö.
+
+2. Imgur-API:n käyttö.
+
+3. Skaalautuva resoluution mukaan.
